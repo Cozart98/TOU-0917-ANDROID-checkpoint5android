@@ -1,0 +1,399 @@
+{
+  "project_info": {
+    "project_number": "83644229297",
+    "firebase_url": "https://checkpoint3-android.firebaseio.com",
+    "project_id": "checkpoint3-android",
+    "storage_bucket": "checkpoint3-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83644229297:android:3edfe355e0c7f20a",
+        "android_client_info": {
+          "package_name": "fr.wildcodeschool.checkpoint3firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83644229297-noh1oontojakktbpofdeu8birkv0nuoq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.checkpoint3firebase",
+            "certificate_hash": "87e43e6f284a133702ad8f2d544792c0c6deb17c"
+          }
+        },
+        {
+          "client_id": "83644229297-656t5qk3j3k807m91bv38j7b9q0u5oa8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.checkpoint3firebase",
+            "certificate_hash": "a7709d68792e755543ba886c5f54d0b3811e1b70"
+          }
+        },
+        {
+          "client_id": "83644229297-g8b8vcvd1at2g3h73me2bs872i2jlrj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.checkpoint3firebase",
+            "certificate_hash": "94dc75ac6621f747577bb123627bb3412ba73ff0"
+          }
+        },
+        {
+          "client_id": "83644229297-j5p0stb8plkjqohma7tmkmcketbnqp9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.checkpoint3firebase",
+            "certificate_hash": "cf3000441af4b4f0e0704b7991af35e273d680ca"
+          }
+        },
+        {
+          "client_id": "83644229297-5vkm9f258kalb6f7v7h5unohh7dp6j5s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.checkpoint3firebase",
+            "certificate_hash": "31b2e70e3e87d36e34019611a9d4fa0383143b6a"
+          }
+        },
+        {
+          "client_id": "83644229297-jbuivvm6aij7jes7hs86jv36nmoiknrb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.checkpoint3firebase",
+            "certificate_hash": "b5ff70c69d8cb3c1fa689159c3b74719cb7a874e"
+          }
+        },
+        {
+          "client_id": "83644229297-n1n8fekeaht4ffgtsdu8stghp76mfbe4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.checkpoint3firebase",
+            "certificate_hash": "9d792ecb57db58468d110b82e4f0f5c33731fa01"
+          }
+        },
+        {
+          "client_id": "83644229297-5atv6s5g2pq58aqnkpbi05cfmhhcrigb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.checkpoint3firebase",
+            "certificate_hash": "2c8356f7f420c9f0061d1aaa632dfad44327e303"
+          }
+        },
+        {
+          "client_id": "83644229297-6e593tkfcrhe102bamtotm8d1okuf4ur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.checkpoint3firebase",
+            "certificate_hash": "d10c7908868ff2bf0e5630fd28c08cf67757a5fc"
+          }
+        },
+        {
+          "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCONdLk-tZqPGojJkq_uIrjbWYACTTY0Jw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83644229297:android:3b2ce71c9d62d066",
+        "android_client_info": {
+          "package_name": "fr.wildcodeschool.wcstravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83644229297-eshqcgnsk3ev2k71l2c7fft9amd610c1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.wcstravel",
+            "certificate_hash": "d10c7908868ff2bf0e5630fd28c08cf67757a5fc"
+          }
+        },
+        {
+          "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCONdLk-tZqPGojJkq_uIrjbWYACTTY0Jw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83644229297:android:354a7e0911d7286d",
+        "android_client_info": {
+          "package_name": "fr.wildcodeschool.kelian.wcstravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83644229297-09kac1ll2ku79pjn932bnl8c5ohsqs7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.kelian.wcstravel",
+            "certificate_hash": "99938ac99d840dcd9ba3d15a99bec6e2bf32096e"
+          }
+        },
+        {
+          "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCONdLk-tZqPGojJkq_uIrjbWYACTTY0Jw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83644229297:android:5fbc8f5b2231553a",
+        "android_client_info": {
+          "package_name": "com.wcs.germain.wcstravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83644229297-61leqbrol3favrtcnf6rb3r4oaqn96jv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wcs.germain.wcstravel",
+            "certificate_hash": "87e43e6f284a133702ad8f2d544792c0c6deb17c"
+          }
+        },
+        {
+          "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCONdLk-tZqPGojJkq_uIrjbWYACTTY0Jw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83644229297:android:03ce7035ac315314",
+        "android_client_info": {
+          "package_name": "fr.wcs.wcstravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83644229297-l75n4hstpbul094dfmnjsgnpp2stjfom.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wcs.wcstravel",
+            "certificate_hash": "2c8356f7f420c9f0061d1aaa632dfad44327e303"
+          }
+        },
+        {
+          "client_id": "83644229297-6ftpl9m48va320j3b0k3ta9ho78fr25o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wcs.wcstravel",
+            "certificate_hash": "cf3000441af4b4f0e0704b7991af35e273d680ca"
+          }
+        },
+        {
+          "client_id": "83644229297-njjsmerui3s4omehljq7o6bn3ksm16mk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wcs.wcstravel",
+            "certificate_hash": "378c47cdc0a94c66d2471fbe2a4a9580e163fabe"
+          }
+        },
+        {
+          "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCONdLk-tZqPGojJkq_uIrjbWYACTTY0Jw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83644229297:android:b2892f0a446bb79e",
+        "android_client_info": {
+          "package_name": "com.example.wilderjm.wcstravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83644229297-jtvlqhiqd7lpp9k00ou1angi1c65vng4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wilderjm.wcstravel",
+            "certificate_hash": "b5ff70c69d8cb3c1fa689159c3b74719cb7a874e"
+          }
+        },
+        {
+          "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCONdLk-tZqPGojJkq_uIrjbWYACTTY0Jw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83644229297:android:524a11c12bfc2a2a",
+        "android_client_info": {
+          "package_name": "map.android.com.wcstravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83644229297-e01hf7381qiri9mnd1pr76qtvj0o0sdv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "map.android.com.wcstravel",
+            "certificate_hash": "397ef71fcf424841ed235e83cac8158e0168e995"
+          }
+        },
+        {
+          "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCONdLk-tZqPGojJkq_uIrjbWYACTTY0Jw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83644229297-haudchg4v62m5d1rf5sqkm5879hcc82t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
