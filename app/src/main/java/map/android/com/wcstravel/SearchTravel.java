@@ -26,33 +26,33 @@ import java.util.List;
 public class SearchTravel extends AppCompatActivity {
 
 
-	private EditText etGO, etBack, etDateGo, etDateBack;
+	private EditText mEtGO, mEtBack, mEtDateGo, mEtDateBack;
 	TextView mAirline, mDepartureDate,mPrice, mRetunDate, mTravel;
-	Button search;
+	Button mSearch;
 	RecyclerView mRecycler;
-	String compare;
-	String etTravel;
+	String mCompare;
+	String mEtTravel;
 	private TravelAdapter mAdapter = null;
 	private List<TravelModel> mTravelList = new ArrayList<>();
-	FirebaseDatabase database = FirebaseDatabase.getInstance();
+	FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_search_travel);
 
-		etGO = (EditText) findViewById(R.id.et_go) ;
-		etBack = (EditText) findViewById(R.id.et_return);
-		etDateGo = (EditText) findViewById(R.id.et_date_go);
-		etDateBack = (EditText) findViewById(R.id.et_date_back);
+		mEtGO = (EditText) findViewById(R.id.et_go) ;
+		mEtBack = (EditText) findViewById(R.id.et_return);
+		mEtDateGo = (EditText) findViewById(R.id.et_date_go);
+		mEtDateBack = (EditText) findViewById(R.id.et_date_back);
 		mAirline = (TextView) findViewById(R.id.travel_airline_item);
 		mDepartureDate = (TextView) findViewById(R.id.travel_date_go_item);
 		mPrice = (TextView) findViewById(R.id.travel_price_item);
 		mRetunDate = (TextView) findViewById(R.id.travel_date_return_item);
 		mTravel = (TextView) findViewById(R.id.travel_item);
-		search = (Button) findViewById(R.id.search);
-		etDateGo.setFocusable(false);
-		etDateGo.setFocusable(false);
+		mSearch = (Button) findViewById(R.id.search);
+		mEtDateGo.setFocusable(false);
+		mEtDateGo.setFocusable(false);
 
 
 
@@ -65,10 +65,10 @@ public class SearchTravel extends AppCompatActivity {
 						myCalendarGo.set(Calendar.MONTH, monthOfYear);
 						myCalendarGo.set(Calendar.DAY_OF_MONTH, dayOfMonth);
 						SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-						etDateGo.setText(sdf.format(myCalendarGo.getTime()));
+						mEtDateGo.setText(sdf.format(myCalendarGo.getTime()));
 					}
 				};
-		etDateGo.setOnClickListener(new View.OnClickListener() {
+		mEtDateGo.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				DatePickerDialog date =
@@ -93,10 +93,10 @@ public class SearchTravel extends AppCompatActivity {
 						myCalendarBack.set(Calendar.MONTH, monthOfYear);
 						myCalendarBack.set(Calendar.DAY_OF_MONTH, dayOfMonth);
 						SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-						etDateBack.setText(sdf.format(myCalendarBack.getTime()));
+						mEtDateBack.setText(sdf.format(myCalendarBack.getTime()));
 					}
 				};
-		etDateBack.setOnClickListener(new View.OnClickListener() {
+		mEtDateBack.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 
@@ -113,54 +113,56 @@ public class SearchTravel extends AppCompatActivity {
 			}
 		});
 
-		search.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				compare = etGO.getText().toString() + etBack.getText().toString();
-				etTravel = etGO.getText().toString() + "_" + etBack.getText().toString();
-				if (etGO.getText().toString().isEmpty()
-						||etBack.getText().toString().isEmpty()
-						||etDateGo.getText().toString().isEmpty()
-						||etDateBack.getText().toString().isEmpty()){
-					Toast.makeText(SearchTravel.this, "T'es une merde", Toast.LENGTH_SHORT).show();
-				}else {
-					mTravelList.clear();
-					final DatabaseReference refTravels = database.getReference("checkpoint5/travels");
-					refTravels.orderByChild("travel").equalTo(etTravel).addValueEventListener(new ValueEventListener() {
-								@Override
-								public void onDataChange(DataSnapshot dataSnapshot) {
+	mSearch.setOnClickListener(new View.OnClickListener() {
+		@Override
+		public void onClick(View view) {
+			mCompare = mEtGO.getText().toString() + mEtBack.getText().toString();
+			mEtTravel = mEtGO.getText().toString() + "_" + mEtBack.getText().toString();
+			if (mEtGO.getText().toString().isEmpty()
+					|| mEtBack.getText().toString().isEmpty()
+					|| mEtDateGo.getText().toString().isEmpty()
+					|| mEtDateBack.getText().toString().isEmpty()){
+				Toast.makeText(SearchTravel.this, R.string.champ_vide,
+						Toast.LENGTH_SHORT).show();
+			}else {
+				mTravelList.clear();
+				final DatabaseReference refTravels = mDatabase.getReference("checkpoint5/travels");
+				refTravels.orderByChild("travel").equalTo(mEtTravel).addValueEventListener
+						(new ValueEventListener() {
+							@Override
+							public void onDataChange(DataSnapshot dataSnapshot) {
 
-									for (DataSnapshot usersSnapshot : dataSnapshot.getChildren()) {
-										TravelModel travelModel =
-												usersSnapshot.getValue(TravelModel.class);
-										String departureDate = travelModel.getDeparture_date();
-										String departureReturn = travelModel.getReturn_date();
-											if (departureDate.equals(etDateGo.getText().toString())
-													&& departureReturn.equals(etDateBack.getText().toString())){
-												Toast.makeText(SearchTravel.this, "YEAH", Toast.LENGTH_SHORT).show();
-												mTravelList.add(travelModel);
-												mAdapter.notifyDataSetChanged();
-											}else{
+								for (DataSnapshot usersSnapshot : dataSnapshot.getChildren()) {
+									TravelModel travelModel =
+											usersSnapshot.getValue(TravelModel.class);
+									String departureDate = travelModel.getDeparture_date();
+									String departureReturn = travelModel.getReturn_date();
+										if (departureDate.equals(mEtDateGo.getText().toString())
+												&& departureReturn.equals(mEtDateBack.getText()
+												.toString())){
+											mTravelList.add(travelModel);
+											mAdapter.notifyDataSetChanged();
+										}else{
 
-											}
-									}
+										}
 								}
-								@Override
-								public void onCancelled(DatabaseError databaseError) {
-									Toast.makeText(SearchTravel.this, "RIEN VU FDP", Toast.LENGTH_SHORT).show();
-								}
-							});
-					if (compare.equals("NYCLAX")
-							|| compare.equals("NYCBOS")
-							|| compare.equals("NYCMIA")) {
-						Toast.makeText(SearchTravel.this, compare, Toast.LENGTH_SHORT).show();
-					}
-					else{
-						Toast.makeText(SearchTravel.this, "Espece de merde", Toast.LENGTH_SHORT).show();
-					}
+							}
+							@Override
+							public void onCancelled(DatabaseError databaseError) {
+							}
+						});
+				if (mCompare.equals("NYCLAX")
+						|| mCompare.equals("NYCBOS")
+						|| mCompare.equals("NYCMIA")) {
+					Toast.makeText(SearchTravel.this, mCompare, Toast.LENGTH_SHORT).show();
+				}
+				else{
+					Toast.makeText(SearchTravel.this, R.string.aucun_resultat,
+							Toast.LENGTH_SHORT).show();
 				}
 			}
-		});
+		}
+	});
 
 		mAdapter = new TravelAdapter(mTravelList);
 		mRecycler = findViewById(R.id.travel_list);
@@ -170,8 +172,8 @@ public class SearchTravel extends AppCompatActivity {
 	}
 
 	private void addRdvFirebaseListener() {
-		DatabaseReference refTravels = database.getReference("checkpoint5/travels");
-		refTravels.child("checkpoint5/travels").orderByChild("travel").equalTo(etTravel)
+		DatabaseReference refTravels = mDatabase.getReference("checkpoint5/travels");
+		refTravels.child("checkpoint5/travels").orderByChild("travel").equalTo(mEtTravel)
 				.addValueEventListener(new ValueEventListener() {
 					@Override
 					public void onDataChange(DataSnapshot dataSnapshot) {

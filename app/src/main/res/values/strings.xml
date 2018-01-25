@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">WCSTravel</string>
+    <string name="depart">Départ</string>
+    <string name="destination" translatable="false">Destination</string>
+    <string name="date_alle">Date allé</string>
+    <string name="date_retour">Date retour</string>
+    <string name="go" translatable="false">GO</string>
+    <string name="aucun_resultat">Aucun résultat n\'a était trouvé</string>
+    <string name="champ_vide">Veuillez remplir tout les champs</string>
 </resources>

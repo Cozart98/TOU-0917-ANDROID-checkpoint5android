@@ -34,13 +34,13 @@ public class TravelAdapter extends RecyclerView.Adapter<TravelAdapter.TravelView
 	public void onBindViewHolder(TravelViewHolder holder, int position) {
 		final TravelModel travelModel = mTravelList.get(position);
 		double dollar = Double.valueOf(travelModel.getPrice());
-		double priceDollardollar = dollar / 1.24;
+		double priceDollardollar = dollar / 1.2;
 		DecimalFormat df2 = new DecimalFormat(".##");
 		df2.setRoundingMode(RoundingMode.UP);
 		df2.format(priceDollardollar);
 		holder.airline.setText(travelModel.getAirline());
 		holder.travel.setText(travelModel.getTravel());
-		holder.price.setText(travelModel.getPrice() + "€" + " " + priceDollardollar + "$");
+		holder.price.setText(travelModel.getPrice() + "€" + " " + String.format( "%.2f", priceDollardollar ) );
 		holder.dateGo.setText(travelModel.getDeparture_date());
 		holder.dateBack.setText(travelModel.getReturn_date());
 	}

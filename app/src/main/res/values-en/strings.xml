@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WCSTravel</string>
+    <string name="depart">Departure</string>
+    <string name="date_retour">Date return</string>
+    <string name="date_alle">Date departure</string>
+</resources>

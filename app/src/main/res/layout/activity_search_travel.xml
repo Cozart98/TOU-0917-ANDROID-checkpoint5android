@@ -1,82 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="map.android.com.wcstravel.SearchTravel"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="25dp">
 
     <EditText
         android:id="@+id/et_go"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/et_return"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        style="@style/etFormulaire"
+        android:hint="@string/depart"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="52dp" />
 
     <EditText
         android:id="@+id/et_return"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/et_date_go"
-        app:layout_constraintStart_toStartOf="@+id/et_go"
-        app:layout_constraintTop_toBottomOf="@+id/et_go" />
+        style="@style/etFormulaire"
+        android:hint="@string/destination"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="126dp" />
 
     <EditText
         android:id="@+id/et_date_go"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:text="Name"
-        android:focusable="false"
-        app:layout_constraintBottom_toTopOf="@+id/et_date_back"
-        app:layout_constraintStart_toStartOf="@+id/et_return"
-        app:layout_constraintTop_toBottomOf="@+id/et_return" />
+        style="@style/etFormulaire"
+        android:hint="@string/date_alle"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="187dp" />
 
     <EditText
         android:id="@+id/et_date_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="9dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:text="Name"
-        android:focusable="false"
-        app:layout_constraintBottom_toTopOf="@+id/search"
-        app:layout_constraintStart_toStartOf="@+id/et_date_go"
-        app:layout_constraintTop_toBottomOf="@+id/et_date_go" />
+        style="@style/etFormulaire"
+        android:hint="@string/date_retour"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="252dp" />
 
     <Button
         android:id="@+id/search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/et_date_back"
-        app:layout_constraintStart_toStartOf="@+id/et_date_back"
-        app:layout_constraintTop_toBottomOf="@+id/et_date_back" />
+        android:text="@string/go"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="316dp" />
 
     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/travel_list"
-        android:layout_width="match_parent"
+        android:layout_width="384dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search" />
-</android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteY="374dp" />
+</LinearLayout>
